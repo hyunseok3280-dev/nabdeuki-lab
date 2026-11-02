@@ -2,7 +2,7 @@
 <title>사부작 글창고 · 내 𝕏 글 보드 · 사부작 𝕏 LAB</title>
 <meta name="description" content="1년 치 내 𝕏 글을 한 화면에서 검색하고 정렬해, 잘된 글의 패턴을 찾는 보드 (TOOLKIT #2)">
 <meta property="og:title" content="사부작 글창고 · 내 𝕏 글 보드 · 사부작 𝕏 LAB"><meta property="og:image" content="assets/img/t_lib.webp"><meta name="theme-color" content="#070a1a">
-<link rel="icon" href="assets/img/avatar.webp"><link rel="stylesheet" href="assets/style.css?v=20261102s">
+<link rel="icon" href="assets/img/avatar.webp"><link rel="stylesheet" href="assets/style.css?v=20261102t">
 <style>
 .p30{max-width:760px;margin:0 auto;padding:0 16px}.back{display:inline-block;margin:18px 0 6px;opacity:.85}
 .p30 h1{font-size:clamp(26px,7vw,44px);margin:.2em 0;white-space:normal;overflow-wrap:anywhere}.kp{list-style:none;padding:0;display:grid;gap:10px}
@@ -23,29 +23,29 @@
 <header class="nav"><a class="brand" href="./"><img src="assets/img/avatar.webp" alt="" width="32" height="32"><span data-l="ko">사부작 𝕏 LAB</span><span data-l="en">Sabujak 𝕏 Lab</span></a>
 <a class="btn sm" href="https://x.com/tei0002" target="_blank" rel="noopener"><span data-l="ko">팔로우</span><span data-l="en">Follow</span></a></header>
 <main class="p30">
-<a class="back" href="./">← <span data-l="ko">연구소로 돌아가기</span><span data-l="en">Back to the Lab</span></a>
+<a class="back" href="./">← <span data-l="ko">LAB으로 돌아가기</span><span data-l="en">Back to the LAB</span></a>
 <p class="eyebrow">TOOLKIT #2</p>
 <h1><span data-l="ko">사부작 글창고 · 내 𝕏 글 보드</span><span data-l="en">Sabujak Post Shelf · My 𝕏 Posts Board</span></h1>
 <p class="lead"><span data-l="ko">1년 치 내 글을 한 화면에서 검색하고 정렬해, 잘된 글의 패턴을 찾는다.</span><span data-l="en">Search and sort a year of your own posts on one screen — and find the patterns behind the ones that worked.</span></p>
 <div class="prow" style="margin:14px 0 4px;align-items:center"><button class="btn cpy" id="copyTop" type="button"><span data-l="ko">프롬프트 바로 복사</span><span data-l="en">Copy the prompt</span></button><a href="#prompt" style="font-size:14px;opacity:.85;text-decoration:underline"><span data-l="ko">프롬프트 보기 ↓</span><span data-l="en">See the prompt ↓</span></a><span class="cmsg" role="status" aria-live="polite" style="font-size:13px;opacity:.8"></span></div>
 
 <section class="sec"><div class="sh"><h2><span data-l="ko">왜 만들었나</span><span data-l="en">Why I built it</span></h2></div><ul class="kp">
-<li data-l="ko"><b>📦 묻히는 좋은 글</b>좋은 글이 타임라인에 묻혀 다시 찾기 어려워요.</li><li data-l="en"><b>📦 Good posts get buried</b>Good posts sink in the timeline and are hard to find again.</li>
-<li data-l="ko"><b>🔢 감으로만 아는 주제</b>어떤 주제·시리즈가 노출이 잘 나오는지 숫자로 모르고 있었어요.</li><li data-l="en"><b>🔢 Guesswork on topics</b>I didn’t know, in numbers, which topics and series actually get impressions.</li>
-<li data-l="ko"><b>🔁 반복되는 글</b>비슷한 글을 반복해 올리게 돼요. 그래서 ‘중복 주의’ 표시를 넣었어요.</li><li data-l="en"><b>🔁 Repeating myself</b>It’s easy to post near-duplicates — so the board flags them with a ‘Possible duplicate’ badge.</li>
+<li data-l="ko"><b>📦 쓴 글이 어디 갔는지 모름</b>배추값 글, 차트 일기, YL 후기… 쓰고 나면 타임라인에 묻혀서 나도 못 찾아요.</li><li data-l="en"><b>📦 Lost my own posts</b>Produce prices, chart diaries, YL notes — they sink and even I can’t find them.</li>
+<li data-l="ko"><b>🤔 뭐가 먹히는지 감으로만</b>농산물 얘기가 반응 좋은지, 크립토가 좋은지 숫자로 본 적이 없었어요.</li><li data-l="en"><b>🤔 Guessing what works</b>Never actually checked in numbers which topics land.</li>
+<li data-l="ko"><b>🔁 같은 얘기 또 함</b>비슷한 글을 또 쓰더라고요. 그래서 ‘중복 주의’ 표시 넣었어요.</li><li data-l="en"><b>🔁 Repeating myself</b>So the board flags near-duplicates.</li>
 </ul></section>
 
 <section class="sec"><div class="sh"><h2><span data-l="ko">목표</span><span data-l="en">Goals</span></h2></div><ul class="kp">
-<li data-l="ko"><b>✂️ 적게 쓰고 더 크게</b>지난 글을 다시 꺼내 다듬어, 적게 쓰고 더 크게 성장하기.</li><li data-l="en"><b>✂️ Write less, grow more</b>Bring back past posts and polish them instead of always starting from zero.</li>
-<li data-l="ko"><b>📈 상위 주제 찾기</b>노출·참여율 상위 주제를 찾아요.</li><li data-l="en"><b>📈 Find top topics</b>Spot the topics with the highest impressions and engagement rate.</li>
-<li data-l="ko"><b>🧩 시리즈 기획</b>잘된 주제를 시리즈 기획에 활용해요.</li><li data-l="en"><b>🧩 Plan series</b>Turn what worked into planned series.</li>
+<li data-l="ko"><b>✂️ 새로 쓰기 전에 창고부터</b>예전 글 꺼내서 다듬어 다시 올리기. 덜 쓰고 더 사부작.</li><li data-l="en"><b>✂️ Shelf before scratch</b>Polish old posts before writing new ones.</li>
+<li data-l="ko"><b>📈 잘된 주제 보기</b>노출·참여율 상위 주제가 뭔지 확인해요.</li><li data-l="en"><b>📈 See what worked</b>Top topics by impressions and engagement.</li>
+<li data-l="ko"><b>🧩 시리즈로 묶기</b>차트 일기, YL 후기처럼 잘된 건 시리즈로.</li><li data-l="en"><b>🧩 Make series</b>Turn the winners into recurring series.</li>
 </ul></section>
 
 <section class="sec"><div class="sh"><h2><span data-l="ko">보드 미리보기</span><span data-l="en">Board preview</span></h2></div>
 <div class="shots">
-<figure><img src="assets/img/toolkit2_preview1.webp" alt="예시 데이터로 만든 보드 미리보기: 최신순" width="1200" height="530" loading="lazy"><figcaption><span class="ex"><span data-l="ko">예시 데이터</span><span data-l="en">Example data</span></span><span data-l="ko">주제 탭 · 4가지 정렬 · 키워드 검색 · 중복 주의 표시</span><span data-l="en">Topic tabs · 4 sorts · keyword search · duplicate badge</span></figcaption></figure>
-<figure><img src="assets/img/toolkit2_preview2.webp" alt="예시 데이터로 만든 보드 미리보기: 노출순" width="1200" height="530" loading="lazy"><figcaption><span class="ex"><span data-l="ko">예시 데이터</span><span data-l="en">Example data</span></span><span data-l="ko">노출순 정렬</span><span data-l="en">Sorted by impressions</span></figcaption></figure>
-<figure><img src="assets/img/toolkit2_preview3.webp" alt="예시 데이터로 만든 보드 미리보기: 주제 탭과 검색" width="1200" height="340" loading="lazy"><figcaption><span class="ex"><span data-l="ko">예시 데이터</span><span data-l="en">Example data</span></span><span data-l="ko">시리즈 탭 + 키워드 검색</span><span data-l="en">Series tab + keyword search</span></figcaption></figure>
+<figure><img src="assets/img/toolkit2_preview1.webp" alt="예시 데이터로 만든 보드 미리보기: 최신순" width="1200" height="675" loading="lazy"><figcaption><span class="ex"><span data-l="ko">예시 데이터</span><span data-l="en">Example data</span></span><span data-l="ko">주제 탭 · 4가지 정렬 · 키워드 검색 · 중복 주의 표시</span><span data-l="en">Topic tabs · 4 sorts · keyword search · duplicate badge</span></figcaption></figure>
+<figure><img src="assets/img/toolkit2_preview2.webp" alt="예시 데이터로 만든 보드 미리보기: 노출순" width="1200" height="675" loading="lazy"><figcaption><span class="ex"><span data-l="ko">예시 데이터</span><span data-l="en">Example data</span></span><span data-l="ko">노출순 정렬</span><span data-l="en">Sorted by impressions</span></figcaption></figure>
+<figure><img src="assets/img/toolkit2_preview3.webp" alt="예시 데이터로 만든 보드 미리보기: 주제 탭과 검색" width="1200" height="675" loading="lazy"><figcaption><span class="ex"><span data-l="ko">예시 데이터</span><span data-l="en">Example data</span></span><span data-l="ko">시리즈 탭 + 키워드 검색</span><span data-l="en">Series tab + keyword search</span></figcaption></figure>
 </div>
 <ul class="feat" style="margin-top:14px">
 <li data-l="ko">🗂 주제 탭 자동 분류</li><li data-l="en">🗂 Auto-sorted topic tabs</li>
@@ -74,22 +74,24 @@
 5. 제목을 누르면 원글로 바로 이동하게 해 줘.
 6. 최근 7일 안에 내용이 비슷한 글이 있으면 &#x27;중복 주의&#x27;로 표시해 줘.
 7. 스마트폰과 PC 모두 보기 좋게, 한 페이지 20개씩 넘겨 보게 해 줘.
-8. 매일 아침 6시에 새 글과 지표를 반영해서 같은 페이지를 자동으로 갱신해 줘.</pre></div>
+8. 매일 아침 6시에 새 글과 지표를 반영해서 같은 페이지를 자동으로 갱신해 줘.
+
+제작: 사부작 @tei0002</pre></div>
 <div class="prow"><button id="copy" class="btn cpy" type="button"><span data-l="ko">프롬프트 복사</span><span data-l="en">Copy prompt</span></button>
 <!-- TEMPLATE LINK: 공개되면 아래 button을 <a class="btn ghost" href="https://x.ai/bot/..." target="_blank" rel="noopener">…</a> 로 교체 -->
 <button class="btn ghost" type="button" disabled><span data-l="ko">그록봇 템플릿 · 공개 예정</span><span data-l="en">Grok Bot template · coming soon</span></button></div>
 <p id="cmsg" class="cmsg" role="status" aria-live="polite" style="font-size:13px;min-height:1.4em;opacity:.8"></p></section>
 
 <section class="sec"><div class="sh"><h2><span data-l="ko">활용 팁</span><span data-l="en">Tips</span></h2></div>
-<p class="tip"><span data-l="ko">노출순 상위 10개의 첫 줄 패턴을 따라 써 보세요.<br>‘중복 주의’가 뜬 글은 새로 쓰기보다 예전 글을 다듬어 다시 올려 보세요.</span><span data-l="en">Copy the first-line patterns of your top 10 posts by impressions.<br>When a post is flagged as a possible duplicate, try polishing the older one instead of writing a new one.</span></p></section>
+<p class="tip"><span data-l="ko">노출순 상위 10개 첫 줄만 쭉 읽어 봐요. 내 말투 중에 뭐가 먹히는지 보여요.<br>‘중복 주의’ 뜨면 새로 쓰지 말고 옛날 글 다듬어서 재활용.</span><span data-l="en">Read the first lines of your top 10 — you’ll see which voice works.<br>Flagged duplicate? Polish the old one instead.</span></p></section>
 
 <section class="sec"><div class="sh"><h2><span data-l="ko">함께 보면 좋은 것</span><span data-l="en">More from the Lab</span></h2></div><ul class="more">
 <li>🤝 <a href="toolkit1/"><span data-l="ko">TOOLKIT #1 · 인팔 300 서클</span><span data-l="en">TOOLKIT #1 · Inpal 300 Circle</span></a></li>
 <li>🧹 <a href="https://x.ai/bot/4-88zaIJIAtahDuxERLAZ" target="_blank" rel="noopener"><span data-l="ko">언팔 보드 그록봇 템플릿</span><span data-l="en">Unfollow board · Grok Bot template</span></a></li></ul>
 <p class="lead" style="margin-top:16px"><span data-l="ko">만들어 보시면 인용으로 보여 주세요.<br>여러분 글 중 노출 1위는 어떤 주제였나요?</span><span data-l="en">If you build one, show it in a quote post.<br>Which topic was your #1 post by impressions?</span></p></section>
-<a class="back" href="./">← <span data-l="ko">연구소로 돌아가기</span><span data-l="en">Back to the Lab</span></a>
+<a class="back" href="./">← <span data-l="ko">LAB으로 돌아가기</span><span data-l="en">Back to the LAB</span></a>
 </main><footer>© 2026 <span data-l="ko">사부작 𝕏 LAB</span><span data-l="en">Sabujak 𝕏 Lab</span> · Made with Grok Bot · 오늘도 사부작🌱</footer>
-<script src="assets/i18n.js?v=20261102s"></script>
+<script src="assets/i18n.js?v=20261102t"></script>
 <script>
 const doCopy=async ev=>{const bt=ev.currentTarget,t=document.getElementById('ptxt').textContent,en=document.documentElement.lang==='en';let ok=false;
 try{await navigator.clipboard.writeText(t);ok=true}catch(e){const a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();try{ok=document.execCommand('copy')}catch(_){}a.remove()}
