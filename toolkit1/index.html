@@ -1,0 +1,105 @@
+<!doctype html><html lang="ko" data-title-ko="인팔 300 서클 · 납득이 𝕏 연구소" data-title-en="Inpal 300 Circle · Nabdeuki 𝕏 Lab"><head><base href="/nabdeuki-lab/"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>인팔 300 서클 · 납득이 𝕏 연구소</title>
+<meta name="description" content="맞팔 인증 친구 최대 300명을, 최근에 답글을 못 단 순서로 정렬해 주는 매일 보드 (TOOLKIT #1)">
+<meta property="og:title" content="인팔 300 서클 · 납득이 𝕏 연구소"><meta property="og:image" content="/assets/img/t_inpal.webp"><meta name="theme-color" content="#070a1a">
+<link rel="icon" href="/assets/img/avatar.webp"><link rel="stylesheet" href="/assets/style.css?v=20261102f">
+<style>
+.p30{max-width:760px;margin:0 auto;padding:0 16px}.back{display:inline-block;margin:18px 0 6px;opacity:.85}
+.p30 h1{font-size:clamp(26px,7vw,44px);margin:.2em 0;white-space:normal;overflow-wrap:anywhere}.kp{list-style:none;padding:0;display:grid;gap:10px}
+.kp li{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:12px 14px;line-height:1.55}
+.kp b{display:block;margin-bottom:2px}
+.shots{display:grid;gap:14px}.shots figure{margin:0}.shots img{width:100%;height:auto;border-radius:12px;border:1px solid rgba(255,255,255,.12);display:block}
+.shots figcaption{font-size:13px;opacity:.7;margin-top:6px}.ex{display:inline-block;background:#ffb020;color:#000;font-size:12px;font-weight:700;padding:2px 8px;border-radius:99px;margin-right:6px}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;list-style:none;padding:0}
+.feat li{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:10px 12px;line-height:1.5}
+.steps{counter-reset:s;list-style:none;padding:0;display:grid;gap:10px}.steps li{counter-increment:s;display:flex;gap:12px;align-items:center;background:rgba(255,255,255,.05);border-radius:12px;padding:12px 14px}
+.steps li::before{content:counter(s);flex:0 0 30px;height:30px;border-radius:50%;background:#1d9bf0;color:#fff;display:grid;place-items:center;font-weight:700}
+.pbox{position:relative;background:#0d1230;border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:16px;}
+.pbox pre{margin:0;white-space:pre-wrap;word-break:keep-all;overflow-wrap:anywhere;font:14px/1.7 inherit;font-family:inherit}
+.prow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.btn[disabled]{opacity:.6;cursor:not-allowed;color:#e8ecff;background:rgba(255,255,255,.08);border:1px dashed rgba(255,255,255,.35)}
+.tip{background:rgba(29,155,240,.1);border-left:3px solid #1d9bf0;border-radius:8px;padding:12px 14px;line-height:1.6}
+.more{list-style:none;padding:0;display:grid;gap:8px}.more a{text-decoration:underline}
+</style></head><body>
+<header class="nav"><a class="brand" href="/"><img src="/assets/img/avatar.webp" alt="" width="32" height="32"><span data-l="ko">납득이 𝕏 연구소</span><span data-l="en">Nabdeuki 𝕏 Lab</span></a>
+<a class="btn sm" href="https://x.com/x_research_kr" target="_blank" rel="noopener"><span data-l="ko">팔로우</span><span data-l="en">Follow</span></a></header>
+<main class="p30">
+<a class="back" href="/">← <span data-l="ko">연구소로 돌아가기</span><span data-l="en">Back to the Lab</span></a>
+<p class="eyebrow">TOOLKIT #1</p>
+<h1><span data-l="ko">인팔 300 서클</span><span data-l="en">Inpal 300 Circle</span></h1>
+<p class="lead"><span data-l="ko">맞팔 인증 친구 최대 300명을, 최근에 답글을 못 단 순서로 정렬해 주는 매일 보드.</span><span data-l="en">A daily board of up to 300 verified mutuals, sorted by who you haven’t replied to lately.</span></p>
+<div class="prow" style="margin:14px 0 4px;align-items:center"><button class="btn cpy" id="copyTop" type="button"><span data-l="ko">프롬프트 바로 복사</span><span data-l="en">Copy the prompt</span></button><a href="#prompt" style="font-size:14px;opacity:.85;text-decoration:underline"><span data-l="ko">프롬프트 보기 ↓</span><span data-l="en">See the prompt ↓</span></a><span class="cmsg" role="status" aria-live="polite" style="font-size:13px;opacity:.8"></span></div>
+
+<section class="sec"><div class="sh"><h2><span data-l="ko">왜 만들었나</span><span data-l="en">Why I built it</span></h2></div><ul class="kp">
+<li data-l="ko"><b>📉 답글이 줄면 노출도 줄었다</b>10/29 답글 690개일 때 노출 52,378, 10/31 답글 221개일 때 노출 17,363 (제 𝕏 애널리틱스 기준).</li><li data-l="en"><b>📉 Fewer replies, fewer impressions</b>Oct 29: 690 replies → 52,378 impressions. Oct 31: 221 replies → 17,363 impressions (my 𝕏 Analytics).</li>
+<li data-l="ko"><b>⏱ 하루 1,000개는 불가능</b>본업이 있는 사람에게 하루 1,000개는 무리예요. 그래서 정한 현실적인 선이 300명이에요.</li><li data-l="en"><b>⏱ 1,000 a day is impossible</b>With a day job, 1,000 replies a day isn’t realistic — so I set a realistic line: 300 people.</li>
+<li data-l="ko"><b>🧠 감에 의존하면 잊는다</b>감으로 챙기다 보면 깜빡 잊는 친구가 생겨요.</li><li data-l="en"><b>🧠 Gut feeling forgets</b>Going by feel, some friends inevitably slip through the cracks.</li>
+</ul></section>
+
+<section class="sec"><div class="sh"><h2><span data-l="ko">목표</span><span data-l="en">Goals</span></h2></div><ul class="kp">
+<li data-l="ko"><b>1️⃣ 맞팔 인팔 우선</b>맞팔 인팔(인증된 팔로워)을 먼저 챙겨요. 공개된 𝕏 추천 코드에서 맞팔 사이 댓글엔 +15가 붙습니다.</li><li data-l="en"><b>1️⃣ Verified mutuals first</b>Prioritize verified mutual followers. In 𝕏’s published recommendation code, replies between mutuals get +15.</li>
+<li data-l="ko"><b>2️⃣ 한 달에 한 번은 모두와</b>한 달에 한 번은 모두와 서로 소통해요. 최근에 못 찾아간 인팔부터 돌아가요.</li><li data-l="en"><b>2️⃣ Everyone, at least once a month</b>Interact with everyone at least once a month, starting with those you haven’t visited lately.</li>
+<li data-l="ko"><b>3️⃣ 인사 대신 할 말 있는 답글</b>한 줄이라도 그 글을 읽었다는 게 보여야 대화가 이어져요.</li><li data-l="en"><b>3️⃣ Real replies, not greetings</b>Even one line that shows you read the post keeps the conversation going.</li>
+</ul></section>
+
+<section class="sec"><div class="sh"><h2><span data-l="ko">보드 미리보기</span><span data-l="en">Board preview</span></h2></div>
+<div class="shots">
+<figure><img src="/assets/img/toolkit1_preview1.webp" alt="예시 데이터로 만든 보드 미리보기: 오늘의 보드" width="1200" height="639" loading="lazy"><figcaption><span class="ex"><span data-l="ko">예시 데이터</span><span data-l="en">Example data</span></span><span data-l="ko">요약(오늘 소통할 친구 · 완료 · 진행률) + 답글 오래된 순</span><span data-l="en">Summary (friends today · done · progress) + longest-since-reply first</span></figcaption></figure>
+<figure><img src="/assets/img/toolkit1_preview2.webp" alt="예시 데이터로 만든 보드 미리보기: 소통 완료 체크" width="1200" height="639" loading="lazy"><figcaption><span class="ex"><span data-l="ko">예시 데이터</span><span data-l="en">Example data</span></span><span data-l="ko">소통 완료 체크</span><span data-l="en">Marking friends as done</span></figcaption></figure>
+<figure><img src="/assets/img/toolkit1_preview3.webp" alt="예시 데이터로 만든 보드 미리보기: 미체크 이월" width="1200" height="639" loading="lazy"><figcaption><span class="ex"><span data-l="ko">예시 데이터</span><span data-l="en">Example data</span></span><span data-l="ko">어제 미체크 친구는 오늘 다시 포함</span><span data-l="en">Yesterday’s unchecked friends roll over to today</span></figcaption></figure>
+</div>
+<ul class="feat" style="margin-top:14px">
+<li data-l="ko">⏰ 매일 아침 6시(한국시간) 자동 갱신</li><li data-l="en">⏰ Auto-refresh daily at 06:00 KST</li>
+<li data-l="ko">🔁 어제 못 챙긴(미체크) 인팔은 오늘 리스트에 다시 포함</li><li data-l="en">🔁 Yesterday’s unchecked friends come back today</li>
+<li data-l="ko">🤝 주고받은 반응 많은 친구 우선, 그중 답글 단 지 오래된 친구가 맨 위</li><li data-l="en">🤝 Most two-way interaction first; longest since your last reply on top</li>
+<li data-l="ko">🔗 프로필 바로 열기</li><li data-l="en">🔗 Open profiles in one tap</li>
+<li data-l="ko">✅ 소통 완료 체크 (브라우저 저장)</li><li data-l="en">✅ “Done” checkbox (saved in your browser)</li>
+<li data-l="ko">💬 채팅으로 ‘@아이디 소통 완료’라고 알리면 다음 갱신에 반영</li><li data-l="en">💬 Tell the bot “@handle done” in chat — reflected in the next refresh</li>
+<li data-l="ko">🔒 읽기 전용: 봇이 대신 글·답글·팔로우·DM 하지 않음</li><li data-l="en">🔒 Read-only: the bot never posts, replies, follows or DMs for you</li>
+</ul></section>
+
+<section class="sec"><div class="sh"><h2><span data-l="ko">사용법 3단계</span><span data-l="en">How to use · 3 steps</span></h2></div><ol class="steps">
+<li data-l="ko">그록봇에서 𝕏를 연결해요</li><li data-l="en">Connect 𝕏 in Grok Bot</li>
+<li data-l="ko">아래 프롬프트를 붙여 넣어요 (‘@내아이디’만 내 아이디로)</li><li data-l="en">Paste the prompt below (swap ‘@내아이디’ for your handle)</li>
+<li data-l="ko">매일 6시 보드를 확인하고 답글을 달아요</li><li data-l="en">Check the board at 06:00 each day and reply</li>
+</ol></section>
+
+<section class="sec" id="prompt"><div class="sh"><h2><span data-l="ko">프롬프트</span><span data-l="en">Prompt</span></h2></div>
+<p data-l="en" style="font-size:13px;opacity:.75">The prompt is in Korean; Grok Bot understands it as-is. Just swap ‘@내아이디’ / ‘내아이디’ for your handle.</p>
+<div class="pbox"><pre id="ptxt">내 𝕏 계정 @내아이디 로 &#x27;인팔 300 서클&#x27; 보드를 페이지(Canvas)로 만들어 줘.
+
+1. 대상: 나와 맞팔이면서 인증된 팔로워(인팔) 중 우선순위 최대 300명.
+2. 내 팔로워·팔로잉 목록은 일주일에 한 번 가져와 줘. 이때 verified, verified_type, public_metrics도 같이 받아 줘.
+3. 친구별 마지막 내 답글 시각은 검색 `from:내아이디 is:reply` 로 찾아 줘.
+4. 상대의 최근 반응은 검색 `to:내아이디 is:verified -from:내아이디` 로 찾아 줘.
+5. 정렬: 서로 주고받은 반응이 많은 친구를 먼저, 그중 내가 답글 단 지 가장 오래된 친구를 맨 위에.
+6. 보드 맨 위 요약: 오늘 소통할 친구 수, 소통 완료 수, 진행률.
+7. 각 줄: 이름, @핸들, 인증 표시, 마지막 내 답글 날짜, 상대의 최근 반응, &#x27;프로필 열기&#x27; 버튼(https://x.com/아이디 새 탭), &#x27;소통 완료&#x27; 체크박스(브라우저 로컬 저장).
+8. 체크하지 못한 친구는 다음 날 리스트에 다시 넣어 줘. 내가 채팅으로 &#x27;@아이디 소통 완료&#x27;라고 알려 주면 다음 갱신에 반영해 줘.
+9. 𝕏는 읽기 전용 호출만 써 줘. 글·답글·팔로우·DM은 절대 하지 말고, 호출은 1분에 30회 이하로.
+10. 갱신할 때는 새 페이지를 만들지 말고 같은 페이지를 수정해 줘.
+11. 매일 아침 6시(한국시간)에 보드를 갱신하는 루틴을 제안해 줘.
+12. 채팅 답변은 1~2줄 요약과 보드 링크만.
+
+제작: 납득이 @x_research_kr</pre></div>
+<div class="prow"><button id="copy" class="btn cpy" type="button"><span data-l="ko">프롬프트 복사</span><span data-l="en">Copy prompt</span></button>
+<!-- TEMPLATE LINK: 공개되면 아래 button을 <a class="btn ghost" href="https://x.ai/bot/..." target="_blank" rel="noopener">…</a> 로 교체 -->
+<button class="btn ghost" type="button" disabled><span data-l="ko">그록봇 템플릿 · 공개 예정</span><span data-l="en">Grok Bot template · coming soon</span></button></div>
+<p id="cmsg" class="cmsg" role="status" aria-live="polite" style="font-size:13px;min-height:1.4em;opacity:.8"></p></section>
+
+<section class="sec"><div class="sh"><h2><span data-l="ko">활용 팁</span><span data-l="en">Tips</span></h2></div>
+<p class="tip"><span data-l="ko">출근 전 10분, 보드 맨 위부터 내려가 보세요.<br>한 줄이라도 그 글을 읽었다는 게 보이는 답글을 남겨 보세요.<br>체크는 그날 바로 해야 다음 날 리스트가 정확해져요.</span><span data-l="en">Spend 10 minutes before work going down from the top of the board.<br>Leave replies that show — even in one line — that you read the post.<br>Check friends off the same day so tomorrow’s list stays accurate.</span></p></section>
+
+<section class="sec"><div class="sh"><h2><span data-l="ko">함께 보면 좋은 것</span><span data-l="en">More from the Lab</span></h2></div><ul class="more">
+<li>📚 <a href="/toolkit2"><span data-l="ko">TOOLKIT #2 · 납득 라이브러리</span><span data-l="en">TOOLKIT #2 · Nabdeuk Library</span></a></li>
+<li>🧰 <a href="/#toolkits"><span data-l="ko">𝕏 성장 툴킷 전체 보기</span><span data-l="en">All 𝕏 Growth Toolkits</span></a></li>
+<li>🧹 <a href="https://x.ai/bot/4-88zaIJIAtahDuxERLAZ" target="_blank" rel="noopener"><span data-l="ko">언팔 보드 그록봇 템플릿</span><span data-l="en">Unfollow board · Grok Bot template</span></a></li></ul>
+<p class="lead" style="margin-top:16px"><span data-l="ko">여러분은 하루에 몇 명의 엑친을 먼저 찾아가세요?</span><span data-l="en">How many 𝕏 friends do you reach out to first each day?</span></p></section>
+<a class="back" href="/">← <span data-l="ko">연구소로 돌아가기</span><span data-l="en">Back to the Lab</span></a>
+</main><footer>© 2026 <span data-l="ko">납득이 𝕏 연구소</span><span data-l="en">Nabdeuki 𝕏 Lab</span> · Made with Grok Bot · 납득🫡</footer>
+<script src="/assets/i18n.js?v=20261102f"></script>
+<script>
+const doCopy=async ev=>{const bt=ev.currentTarget,t=document.getElementById('ptxt').textContent,en=document.documentElement.lang==='en';let ok=false;
+try{await navigator.clipboard.writeText(t);ok=true}catch(e){const a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();try{ok=document.execCommand('copy')}catch(_){}a.remove()}
+const m=bt.parentElement.querySelector('.cmsg')||document.getElementById('cmsg');m.textContent=ok?(en?'Copied!':'복사했어요!'):(en?'Copy failed — select the text manually.':'복사가 안 됐어요. 직접 선택해 복사해 주세요.');setTimeout(()=>m.textContent='',2500)};
+document.querySelectorAll('.cpy').forEach(b=>b.addEventListener('click',doCopy));
+</script></body></html>

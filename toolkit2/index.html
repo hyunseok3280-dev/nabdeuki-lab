@@ -1,0 +1,98 @@
+<!doctype html><html lang="ko" data-title-ko="납득 라이브러리 · 내 𝕏 글 보드 · 납득이 𝕏 연구소" data-title-en="Nabdeuk Library · My 𝕏 Posts Board · Nabdeuki 𝕏 Lab"><head><base href="/nabdeuki-lab/"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>납득 라이브러리 · 내 𝕏 글 보드 · 납득이 𝕏 연구소</title>
+<meta name="description" content="1년 치 내 𝕏 글을 한 화면에서 검색하고 정렬해, 잘된 글의 패턴을 찾는 보드 (TOOLKIT #2)">
+<meta property="og:title" content="납득 라이브러리 · 내 𝕏 글 보드 · 납득이 𝕏 연구소"><meta property="og:image" content="/assets/img/t_lib.webp"><meta name="theme-color" content="#070a1a">
+<link rel="icon" href="/assets/img/avatar.webp"><link rel="stylesheet" href="/assets/style.css?v=20261102f">
+<style>
+.p30{max-width:760px;margin:0 auto;padding:0 16px}.back{display:inline-block;margin:18px 0 6px;opacity:.85}
+.p30 h1{font-size:clamp(26px,7vw,44px);margin:.2em 0;white-space:normal;overflow-wrap:anywhere}.kp{list-style:none;padding:0;display:grid;gap:10px}
+.kp li{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:14px;padding:12px 14px;line-height:1.55}
+.kp b{display:block;margin-bottom:2px}
+.shots{display:grid;gap:14px}.shots figure{margin:0}.shots img{width:100%;height:auto;border-radius:12px;border:1px solid rgba(255,255,255,.12);display:block}
+.shots figcaption{font-size:13px;opacity:.7;margin-top:6px}.ex{display:inline-block;background:#ffb020;color:#000;font-size:12px;font-weight:700;padding:2px 8px;border-radius:99px;margin-right:6px}
+.feat{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;list-style:none;padding:0}
+.feat li{background:rgba(255,255,255,.035);border:1px solid rgba(255,255,255,.08);border-radius:12px;padding:10px 12px;line-height:1.5}
+.steps{counter-reset:s;list-style:none;padding:0;display:grid;gap:10px}.steps li{counter-increment:s;display:flex;gap:12px;align-items:center;background:rgba(255,255,255,.05);border-radius:12px;padding:12px 14px}
+.steps li::before{content:counter(s);flex:0 0 30px;height:30px;border-radius:50%;background:#1d9bf0;color:#fff;display:grid;place-items:center;font-weight:700}
+.pbox{position:relative;background:#0d1230;border:1px solid rgba(255,255,255,.15);border-radius:14px;padding:16px;}
+.pbox pre{margin:0;white-space:pre-wrap;word-break:keep-all;overflow-wrap:anywhere;font:14px/1.7 inherit;font-family:inherit}
+.prow{display:flex;gap:10px;flex-wrap:wrap;margin-top:12px}.btn[disabled]{opacity:.6;cursor:not-allowed;color:#e8ecff;background:rgba(255,255,255,.08);border:1px dashed rgba(255,255,255,.35)}
+.tip{background:rgba(29,155,240,.1);border-left:3px solid #1d9bf0;border-radius:8px;padding:12px 14px;line-height:1.6}
+.more{list-style:none;padding:0;display:grid;gap:8px}.more a{text-decoration:underline}
+</style></head><body>
+<header class="nav"><a class="brand" href="/"><img src="/assets/img/avatar.webp" alt="" width="32" height="32"><span data-l="ko">납득이 𝕏 연구소</span><span data-l="en">Nabdeuki 𝕏 Lab</span></a>
+<a class="btn sm" href="https://x.com/x_research_kr" target="_blank" rel="noopener"><span data-l="ko">팔로우</span><span data-l="en">Follow</span></a></header>
+<main class="p30">
+<a class="back" href="/">← <span data-l="ko">연구소로 돌아가기</span><span data-l="en">Back to the Lab</span></a>
+<p class="eyebrow">TOOLKIT #2</p>
+<h1><span data-l="ko">납득 라이브러리 · 내 𝕏 글 보드</span><span data-l="en">Nabdeuk Library · My 𝕏 Posts Board</span></h1>
+<p class="lead"><span data-l="ko">1년 치 내 글을 한 화면에서 검색하고 정렬해, 잘된 글의 패턴을 찾는다.</span><span data-l="en">Search and sort a year of your own posts on one screen — and find the patterns behind the ones that worked.</span></p>
+<div class="prow" style="margin:14px 0 4px;align-items:center"><button class="btn cpy" id="copyTop" type="button"><span data-l="ko">프롬프트 바로 복사</span><span data-l="en">Copy the prompt</span></button><a href="#prompt" style="font-size:14px;opacity:.85;text-decoration:underline"><span data-l="ko">프롬프트 보기 ↓</span><span data-l="en">See the prompt ↓</span></a><span class="cmsg" role="status" aria-live="polite" style="font-size:13px;opacity:.8"></span></div>
+
+<section class="sec"><div class="sh"><h2><span data-l="ko">왜 만들었나</span><span data-l="en">Why I built it</span></h2></div><ul class="kp">
+<li data-l="ko"><b>📦 묻히는 좋은 글</b>좋은 글이 타임라인에 묻혀 다시 찾기 어려워요.</li><li data-l="en"><b>📦 Good posts get buried</b>Good posts sink in the timeline and are hard to find again.</li>
+<li data-l="ko"><b>🔢 감으로만 아는 주제</b>어떤 주제·시리즈가 노출이 잘 나오는지 숫자로 모르고 있었어요.</li><li data-l="en"><b>🔢 Guesswork on topics</b>I didn’t know, in numbers, which topics and series actually get impressions.</li>
+<li data-l="ko"><b>🔁 반복되는 글</b>비슷한 글을 반복해 올리게 돼요. 그래서 ‘중복 주의’ 표시를 넣었어요.</li><li data-l="en"><b>🔁 Repeating myself</b>It’s easy to post near-duplicates — so the board flags them with a ‘Possible duplicate’ badge.</li>
+</ul></section>
+
+<section class="sec"><div class="sh"><h2><span data-l="ko">목표</span><span data-l="en">Goals</span></h2></div><ul class="kp">
+<li data-l="ko"><b>✂️ 적게 쓰고 더 크게</b>지난 글을 다시 꺼내 다듬어, 적게 쓰고 더 크게 성장하기.</li><li data-l="en"><b>✂️ Write less, grow more</b>Bring back past posts and polish them instead of always starting from zero.</li>
+<li data-l="ko"><b>📈 상위 주제 찾기</b>노출·참여율 상위 주제를 찾아요.</li><li data-l="en"><b>📈 Find top topics</b>Spot the topics with the highest impressions and engagement rate.</li>
+<li data-l="ko"><b>🧩 시리즈 기획</b>잘된 주제를 시리즈 기획에 활용해요.</li><li data-l="en"><b>🧩 Plan series</b>Turn what worked into planned series.</li>
+</ul></section>
+
+<section class="sec"><div class="sh"><h2><span data-l="ko">보드 미리보기</span><span data-l="en">Board preview</span></h2></div>
+<div class="shots">
+<figure><img src="/assets/img/toolkit2_preview1.webp" alt="예시 데이터로 만든 보드 미리보기: 최신순" width="1200" height="530" loading="lazy"><figcaption><span class="ex"><span data-l="ko">예시 데이터</span><span data-l="en">Example data</span></span><span data-l="ko">주제 탭 · 4가지 정렬 · 키워드 검색 · 중복 주의 표시</span><span data-l="en">Topic tabs · 4 sorts · keyword search · duplicate badge</span></figcaption></figure>
+<figure><img src="/assets/img/toolkit2_preview2.webp" alt="예시 데이터로 만든 보드 미리보기: 노출순" width="1200" height="530" loading="lazy"><figcaption><span class="ex"><span data-l="ko">예시 데이터</span><span data-l="en">Example data</span></span><span data-l="ko">노출순 정렬</span><span data-l="en">Sorted by impressions</span></figcaption></figure>
+<figure><img src="/assets/img/toolkit2_preview3.webp" alt="예시 데이터로 만든 보드 미리보기: 주제 탭과 검색" width="1200" height="340" loading="lazy"><figcaption><span class="ex"><span data-l="ko">예시 데이터</span><span data-l="en">Example data</span></span><span data-l="ko">시리즈 탭 + 키워드 검색</span><span data-l="en">Series tab + keyword search</span></figcaption></figure>
+</div>
+<ul class="feat" style="margin-top:14px">
+<li data-l="ko">🗂 주제 탭 자동 분류</li><li data-l="en">🗂 Auto-sorted topic tabs</li>
+<li data-l="ko">↕️ 4가지 정렬: 최신순·노출순·댓글률순·참여율순</li><li data-l="en">↕️ 4 sorts: newest · impressions · reply rate · engagement</li>
+<li data-l="ko">🔍 키워드 검색</li><li data-l="en">🔍 Keyword search</li>
+<li data-l="ko">🔗 원글 바로가기</li><li data-l="en">🔗 One tap to the original post</li>
+<li data-l="ko">🧮 참여율 = (좋아요+댓글+리포스트+인용+북마크) ÷ 노출</li><li data-l="en">🧮 Engagement = (likes+replies+reposts+quotes+bookmarks) ÷ impressions</li>
+<li data-l="ko">⏰ 매일 06시 자동 갱신</li><li data-l="en">⏰ Auto-refresh daily at 06:00</li>
+<li data-l="ko">📄 한 페이지 20개</li><li data-l="en">📄 20 posts per page</li>
+</ul></section>
+
+<section class="sec"><div class="sh"><h2><span data-l="ko">사용법 3단계</span><span data-l="en">How to use · 3 steps</span></h2></div><ol class="steps">
+<li data-l="ko">아래 프롬프트를 복사해요</li><li data-l="en">Copy the prompt below</li>
+<li data-l="ko">그록봇에 붙여 넣어요</li><li data-l="en">Paste it into Grok Bot</li>
+<li data-l="ko">‘@내아이디’만 내 아이디로 바꿔요</li><li data-l="en">Replace ‘@내아이디’ with your own handle</li>
+</ol></section>
+
+<section class="sec" id="prompt"><div class="sh"><h2><span data-l="ko">프롬프트</span><span data-l="en">Prompt</span></h2></div>
+<p data-l="en" style="font-size:13px;opacity:.75">The prompt is in Korean; Grok Bot understands it as-is. Just swap ‘@내아이디’ for your handle.</p>
+<div class="pbox"><pre id="ptxt">내 𝕏 계정 @내아이디 의 글로 &#x27;내 글 게시판&#x27;을 페이지로 만들어 줘.
+
+1. 최근 1년 동안 내가 쓴 원글, 인용글, 아티클만 모으고 답글과 리포스트는 빼 줘.
+2. 글마다 날짜, 첫 줄(제목), 노출, 좋아요, 댓글, 리포스트, 북마크, 참여율을 보여 줘. 참여율 = (좋아요+댓글+리포스트+인용+북마크) ÷ 노출.
+3. 글 내용을 보고 주제 탭 6~10개로 자동 분류하고, 반복되는 말머리는 시리즈로 묶어 줘.
+4. 최신순, 노출순, 댓글률순, 참여율순 정렬과 키워드 검색을 넣어 줘.
+5. 제목을 누르면 원글로 바로 이동하게 해 줘.
+6. 최근 7일 안에 내용이 비슷한 글이 있으면 &#x27;중복 주의&#x27;로 표시해 줘.
+7. 스마트폰과 PC 모두 보기 좋게, 한 페이지 20개씩 넘겨 보게 해 줘.
+8. 매일 아침 6시에 새 글과 지표를 반영해서 같은 페이지를 자동으로 갱신해 줘.</pre></div>
+<div class="prow"><button id="copy" class="btn cpy" type="button"><span data-l="ko">프롬프트 복사</span><span data-l="en">Copy prompt</span></button>
+<!-- TEMPLATE LINK: 공개되면 아래 button을 <a class="btn ghost" href="https://x.ai/bot/..." target="_blank" rel="noopener">…</a> 로 교체 -->
+<button class="btn ghost" type="button" disabled><span data-l="ko">그록봇 템플릿 · 공개 예정</span><span data-l="en">Grok Bot template · coming soon</span></button></div>
+<p id="cmsg" class="cmsg" role="status" aria-live="polite" style="font-size:13px;min-height:1.4em;opacity:.8"></p></section>
+
+<section class="sec"><div class="sh"><h2><span data-l="ko">활용 팁</span><span data-l="en">Tips</span></h2></div>
+<p class="tip"><span data-l="ko">노출순 상위 10개의 첫 줄 패턴을 따라 써 보세요.<br>‘중복 주의’가 뜬 글은 새로 쓰기보다 예전 글을 다듬어 다시 올려 보세요.</span><span data-l="en">Copy the first-line patterns of your top 10 posts by impressions.<br>When a post is flagged as a possible duplicate, try polishing the older one instead of writing a new one.</span></p></section>
+
+<section class="sec"><div class="sh"><h2><span data-l="ko">함께 보면 좋은 것</span><span data-l="en">More from the Lab</span></h2></div><ul class="more">
+<li>🤝 <a href="/toolkit1"><span data-l="ko">TOOLKIT #1 · 인팔 300 서클</span><span data-l="en">TOOLKIT #1 · Inpal 300 Circle</span></a></li>
+<li>🧹 <a href="https://x.ai/bot/4-88zaIJIAtahDuxERLAZ" target="_blank" rel="noopener"><span data-l="ko">언팔 보드 그록봇 템플릿</span><span data-l="en">Unfollow board · Grok Bot template</span></a></li></ul>
+<p class="lead" style="margin-top:16px"><span data-l="ko">만들어 보시면 인용으로 보여 주세요.<br>여러분 글 중 노출 1위는 어떤 주제였나요?</span><span data-l="en">If you build one, show it in a quote post.<br>Which topic was your #1 post by impressions?</span></p></section>
+<a class="back" href="/">← <span data-l="ko">연구소로 돌아가기</span><span data-l="en">Back to the Lab</span></a>
+</main><footer>© 2026 <span data-l="ko">납득이 𝕏 연구소</span><span data-l="en">Nabdeuki 𝕏 Lab</span> · Made with Grok Bot · 납득🫡</footer>
+<script src="/assets/i18n.js?v=20261102f"></script>
+<script>
+const doCopy=async ev=>{const bt=ev.currentTarget,t=document.getElementById('ptxt').textContent,en=document.documentElement.lang==='en';let ok=false;
+try{await navigator.clipboard.writeText(t);ok=true}catch(e){const a=document.createElement('textarea');a.value=t;a.style.position='fixed';a.style.opacity='0';document.body.appendChild(a);a.select();try{ok=document.execCommand('copy')}catch(_){}a.remove()}
+const m=bt.parentElement.querySelector('.cmsg')||document.getElementById('cmsg');m.textContent=ok?(en?'Copied!':'복사했어요!'):(en?'Copy failed — select the text manually.':'복사가 안 됐어요. 직접 선택해 복사해 주세요.');setTimeout(()=>m.textContent='',2500)};
+document.querySelectorAll('.cpy').forEach(b=>b.addEventListener('click',doCopy));
+</script></body></html>

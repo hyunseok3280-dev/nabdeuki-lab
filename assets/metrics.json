@@ -1,0 +1,126 @@
+{
+ "updated_kst": "2026-11-02 08:10",
+ "handle": "x_research_kr",
+ "followers": {
+  "current": 7863,
+  "as_of_kst": "2026-11-02 08:03",
+  "source": "𝕏 API get_users_by_id public_metrics"
+ },
+ "project": {
+  "name": "납득이 𝕏 효율화 프로젝트",
+  "start_date": "2026-11-01",
+  "baseline_date": "2026-10-31",
+  "baseline_followers": 7701,
+  "baseline_source": "본인 글 https://x.com/x_research_kr/status/2116500446357418268"
+ },
+ "history": [
+  {
+   "date": "2026-10-15",
+   "followers": 5299,
+   "source": "https://x.com/x_research_kr/status/2110709171377357113"
+  },
+  {
+   "date": "2026-10-19",
+   "followers": 6099,
+   "source": "https://x.com/x_research_kr/status/2112116117187747929"
+  },
+  {
+   "date": "2026-10-31",
+   "followers": 7701,
+   "source": "https://x.com/x_research_kr/status/2116500446357418268"
+  },
+  {
+   "date": "2026-11-01",
+   "followers": 7800,
+   "source": "https://x.com/x_research_kr/status/2116815948758065266"
+  },
+  {
+   "date": "2026-11-02",
+   "followers": 7863,
+   "source": "𝕏 API"
+  }
+ ],
+ "week": {
+  "range": "2026-10-26~2026-11-01",
+  "impressions": 202364,
+  "engagements": 13196,
+  "engagement_rate": 6.52,
+  "new_follows": 1108,
+  "unfollows": 80,
+  "originals": 221,
+  "daily": [
+   {
+    "date": "2026-10-26",
+    "impressions": 38139,
+    "engagements": 2155
+   },
+   {
+    "date": "2026-10-27",
+    "impressions": 35834,
+    "engagements": 3628
+   },
+   {
+    "date": "2026-10-28",
+    "impressions": 28031,
+    "engagements": 2140
+   },
+   {
+    "date": "2026-10-29",
+    "impressions": 52378,
+    "engagements": 2583
+   },
+   {
+    "date": "2026-10-30",
+    "impressions": 27301,
+    "engagements": 1565
+   },
+   {
+    "date": "2026-10-31",
+    "impressions": 17363,
+    "engagements": 877
+   },
+   {
+    "date": "2026-11-01",
+    "impressions": 3318,
+    "engagements": 248
+   }
+  ],
+  "source": "𝕏 애널리틱스 CSV (2026-11-01 내보내기; 11/1은 내보낸 시점까지 집계), 원글 수: 𝕏 API search_posts_all"
+ },
+ "top_posts": [
+  {
+   "id": "2115941760040144969",
+   "date_kst": "2026-10-30 08:00",
+   "text": "🧹 납득이 𝕏 연구소 | 활동중단한 엑친을 언팔하라! 팔로잉 7,000명인데, 내 글이 안 보이는 이유…",
+   "impressions": 3791,
+   "likes": 80,
+   "replies": 39,
+   "reposts": 46,
+   "bookmarks": 26,
+   "url": "https://x.com/x_research_kr/status/2115941760040144969"
+  },
+  {
+   "id": "2115599052352135462",
+   "date_kst": "2026-10-29 09:18",
+   "text": "납득이... 살려주세요😅 납득이 노출수 6일째 하락세... 과연 반등은 언제?",
+   "impressions": 2108,
+   "likes": 129,
+   "replies": 96,
+   "reposts": 52,
+   "bookmarks": 1,
+   "url": "https://x.com/x_research_kr/status/2115599052352135462"
+  },
+  {
+   "id": "2115277949901656076",
+   "date_kst": "2026-10-28 12:02",
+   "text": "4가지 약속으로 프로필을 갈아엎었습니다. 납득이 프로필을 전면 개편했습니다.",
+   "impressions": 2082,
+   "likes": 100,
+   "replies": 55,
+   "reposts": 46,
+   "bookmarks": 2,
+   "url": "https://x.com/x_research_kr/status/2115277949901656076"
+  }
+ ],
+ "top_posts_source": "𝕏 API search_posts_all public_metrics, 최근 7일(2026-10-26 08:05~11-02 08:05 KST) 원글(답글·리포스트 제외) 노출수 기준, 리포스트=재게시+인용, 2026-11-02 08:05 KST 수집"
+}

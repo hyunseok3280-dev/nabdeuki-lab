@@ -1,0 +1,11 @@
+(()=>{const K='nbd_lang',d=document.documentElement,q=new URLSearchParams(location.search).get('lang');
+let L=(q==='en'||q==='ko')?q:localStorage.getItem(K);if(q==='en'||q==='ko')localStorage.setItem(K,q);
+if(L!=='en'&&L!=='ko')L=(navigator.language||'').toLowerCase().startsWith('ko')?'ko':'en';
+const T={ko:d.dataset.titleKo||document.title,en:d.dataset.titleEn||document.title};
+const set=l=>{L=l;d.lang=l;document.title=T[l];document.querySelectorAll('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.v===l));window.dispatchEvent(new CustomEvent('langchange',{detail:l}))};
+window.nbdLang=()=>L;set(L);
+const mk=()=>{const n=document.querySelector('.nav');if(!n||n.querySelector('.lang'))return;const w=document.createElement('div');w.className='lang';w.setAttribute('role','group');w.setAttribute('aria-label','Language');
+w.innerHTML='<button type="button" data-v="ko">🇰🇷 <span class="lf">한국어</span><span class="ls">KO</span></button><button type="button" data-v="en">🇺🇸 <span class="lf">EN</span><span class="ls">EN</span></button>';
+w.onclick=e=>{const b=e.target.closest('button');if(!b)return;localStorage.setItem(K,b.dataset.v);set(b.dataset.v);const u=new URL(location.href);if(u.searchParams.has('lang')){u.searchParams.set('lang',b.dataset.v);history.replaceState(null,'',u)}};
+const f=n.querySelector('.btn');f?n.insertBefore(w,f):n.appendChild(w);set(L)};
+document.readyState==='loading'?document.addEventListener('DOMContentLoaded',mk):mk()})();
