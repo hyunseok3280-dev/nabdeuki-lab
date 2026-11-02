@@ -1,4 +1,4 @@
-fetch('/assets/plan30.json?v='+Date.now()).then(r=>r.json()).then(j=>{const e=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+fetch('assets/plan30.json?v='+Date.now()).then(r=>r.json()).then(j=>{const e=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const W=(k,n)=>`<span data-l="ko">${k}</span><span data-l="en">${n}</span>`;
 const it=j.items,pub=it.filter(i=>i.status==='published').length;document.getElementById('cnt').innerHTML=W(`발행 ${pub} / ${it.length}`,`Published ${pub} / ${it.length}`);
 document.getElementById('upd').innerHTML=W('업데이트 ','Updated ')+e(j.updated);const wk=d=>Math.min(5,Math.ceil(+d.split('/')[1]/7));let o='',w=0;
